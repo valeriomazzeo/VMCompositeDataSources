@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (0.3.1)
+  - Specta (0.2.1)
+  - VMCompositeDataSources (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta (~> 0.2.1)
+  - VMCompositeDataSources (from `../`)
+
+EXTERNAL SOURCES:
+  VMCompositeDataSources:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  VMCompositeDataSources: de82708fba72610cb552382c39e37ca89117bd46
+
+COCOAPODS: 0.33.1
