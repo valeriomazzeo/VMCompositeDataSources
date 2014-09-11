@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VMCompositeDataSources"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Composite data sources for UITableView and UICollectionView."
   s.homepage         = "https://github.com/valeriomazzeo/VMCompositeDataSources"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
