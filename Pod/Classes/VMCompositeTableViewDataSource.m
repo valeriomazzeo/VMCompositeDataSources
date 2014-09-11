@@ -174,6 +174,39 @@
     return [dataSource tableView:tableView cellForRowAtIndexPath:dataSourceIndexPath];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BOOL canEditRowAtIndexPath = YES;
+    
+    id<UITableViewDataSource> dataSource = [self dataSourceForSection:indexPath.section];
+    
+    if ([dataSource respondsToSelector:@selector(tableView:canEditRowAtIndexPath:)]) {
+        
+        NSIndexPath *dataSourceIndexPath = [self indexPathForDataSource:dataSource compositeDataSourceIndexPath:indexPath];
+        
+        canEditRowAtIndexPath = [dataSource tableView:tableView canEditRowAtIndexPath:dataSourceIndexPath];
+    }
+    
+    return canEditRowAtIndexPath;
+}
+
+/* TODO: forward these methods to the internal data sources
+ 
+ - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;
+ - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section;
+ 
+ // Allows the reorder accessory view to optionally be shown for a particular row. By default, the reorder control will be shown only if the datasource implements -tableView:moveRowAtIndexPath:toIndexPath:
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath;
+ 
+ - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView;                                                    // return list of section titles to display in section index view (e.g. "ABCD...Z#")
+ - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index;  // tell table which section corresponds to section title/index (e.g. "B",1))
+ 
+ // After a row has the minus or plus button invoked (based on the UITableViewCellEditingStyle for the cell), the dataSource must commit the change
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
+ 
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
+ */
+
 /*
 #pragma mark - KVO Observer
 
