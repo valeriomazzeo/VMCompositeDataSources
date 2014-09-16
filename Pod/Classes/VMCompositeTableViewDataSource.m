@@ -8,8 +8,7 @@
 
 #import <objc/runtime.h>
 #import "VMCompositeTableViewDataSource.h"
-#import "NSIndexPath+VMCompositeDataSourcesAdditions.h"
-#import "NSIndexPath+VMCompositeDataSourcesAdditions_Private.h"
+#import "VMCompositeIndexPath.h"
 
 @interface VMCompositeTableViewDataSource ()
 
@@ -169,9 +168,13 @@
     
     NSIndexPath *dataSourceIndexPath = [self indexPathForDataSource:dataSource compositeDataSourceIndexPath:indexPath];
     
-    dataSourceIndexPath.compositeDataSourceIndexPath = indexPath;
+    NSUInteger dataSourceIndexPathIndexes[dataSourceIndexPath.length];
+    [dataSourceIndexPath getIndexes:dataSourceIndexPathIndexes];
     
-    return [dataSource tableView:tableView cellForRowAtIndexPath:dataSourceIndexPath];
+    VMCompositeIndexPath *compositeIndexPath = [[VMCompositeIndexPath alloc] initWithIndexes:dataSourceIndexPathIndexes length:2];
+    compositeIndexPath.compositeDataSourceIndexPath = indexPath;
+    
+    return [dataSource tableView:tableView cellForRowAtIndexPath:compositeIndexPath];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -313,10 +316,10 @@
 
 #pragma mark - Method Swizzling
 
-- (id)vm_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath*)indexPath
+- (id)vm_dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath
 {
-    if ([self.dataSource isKindOfClass:[VMCompositeTableViewDataSource class]]) {
-        indexPath = indexPath.compositeDataSourceIndexPath;
+    if ([self.dataSource isKindOfClass:[VMCompositeTableViewDataSource class]] && [indexPath isKindOfClass:[VMCompositeIndexPath class]]) {
+        indexPath = [(VMCompositeIndexPath *)indexPath compositeDataSourceIndexPath];
     }
     
     return [self vm_dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];

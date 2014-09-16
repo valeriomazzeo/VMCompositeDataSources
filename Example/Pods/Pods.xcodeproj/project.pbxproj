@@ -24,7 +24,6 @@
 		26777C83CF9D483580725618 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 4050070D7E1F476AA22A3056 /* Expecta.h */; };
 		26B89F1BEDAD45B58EBEFDEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C03B1B12B6A49B28F12C2F0 /* Foundation.framework */; };
 		2BD3DADE1AFE485B9F57F593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C03B1B12B6A49B28F12C2F0 /* Foundation.framework */; };
-		2D19D8474E524BAEAA6E36A1 /* NSIndexPath+VMCompositeDataSourcesAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F614594DD84187A1FF70F7 /* NSIndexPath+VMCompositeDataSourcesAdditions.h */; };
 		2EC4D6D7B1244D4F8CC138EC /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA7F5EF53746938E45EA77 /* EXPMatchers+conformTo.h */; };
 		32F585F663F348B48A1C0581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C03B1B12B6A49B28F12C2F0 /* Foundation.framework */; };
 		344D79927FCD49908CCF6EB0 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 243CF7BCF006403F982969C4 /* EXPMatchers+beInTheRangeOf.h */; };
@@ -54,7 +53,6 @@
 		6516BE4C86B24C3A9F7A6435 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = C3050FF7F3F541FD91E41E67 /* EXPMatchers+beginWith.m */; };
 		6524A13A4619483A9198C889 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 960DE6A090EC4A24A5CC2287 /* EXPMatchers+beIdenticalTo.h */; };
 		6587A484E1C3466696B6DD72 /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B9C695F9C244CFB183D7C6 /* EXPMatcherHelpers.h */; };
-		69F6D6E456CE41BCB1A316AE /* NSIndexPath+VMCompositeDataSourcesAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F614594DD84187A1FF70F7 /* NSIndexPath+VMCompositeDataSourcesAdditions.h */; };
 		6B33CE3B598D4E12A8C3D98D /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 43313C7B32314617AE80B5CD /* EXPUnsupportedObject.h */; };
 		6E6BE250450241B9AF074A9D /* XCTestLog+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB6018F0625409E8A9CCA08 /* XCTestLog+Specta.h */; };
 		718F5020B534417788170223 /* VMCompositeTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D82157F979476FBBB03955 /* VMCompositeTableViewDataSource.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -70,7 +68,6 @@
 		8376B5DBE2524106B8B21ACC /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 524F2D8A76B841E9BBA0ADD6 /* EXPMatchers+beNil.m */; };
 		838CE3C9271E4330B796FD77 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E776E51F3924BBEB47D48A6 /* EXPMatchers+beSupersetOf.m */; };
 		83ABD006890F4596B3E5FD19 /* SPTNestedReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B9903D741064462C9129A4EF /* SPTNestedReporter.h */; };
-		83AC1476CA1B4F5688CDF283 /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA0BEA130FC47E295B22F6F /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h */; };
 		87497D11D8A748D888C40EE7 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891869E82CE4769938E1541 /* EXPMatchers+beGreaterThan.m */; };
 		88EBCFE5B3164B3A9B69C1BC /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 476098CC982F4892A437FB1D /* SPTSharedExampleGroups.h */; };
 		8A542AF306EE4F7CABC7ABD8 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7C6DEB1BFA43E59EB95CA0 /* EXPMatchers+beginWith.h */; };
@@ -84,7 +81,6 @@
 		A2408F2147994A0086655FC7 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 63193BE865204C3B943CB66F /* EXPMatchers+haveCountOf.h */; };
 		A5264D8D9F3740B4AC36DB1B /* SPTReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6733D633C6524A64B64835B2 /* SPTReporter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 		A594F6F8C0A44170B2AA0AC7 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C2139C2AE64625BA0FD0A9 /* EXPMatchers+contain.h */; };
-		A7643E4876BE47F8A914C681 /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA0BEA130FC47E295B22F6F /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h */; };
 		A8E13BDF913A47FD88D4304B /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 144694237CCB448F93255E6C /* EXPMatchers+respondTo.h */; };
 		AAF914B75E6145D5ABBB6E45 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2092F1B479BB4980811CA0D8 /* NSValue+Expecta.m */; };
 		ABC0FD6F7E0544E9BBA934A3 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AB3CDE26F94D33A3085A19 /* EXPMatchers+endWith.h */; };
@@ -120,7 +116,6 @@
 		DCC3A4836E664F488E52D2D8 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 518C65F383564C909057FDA0 /* EXPMatchers+beLessThan.h */; };
 		DD74391A9338491A8CB11121 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDA766AD3F944B4A908D3A7 /* EXPMatchers+beTruthy.h */; };
 		DEB88EBFE87648749C84D2AE /* VMCompositeTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE93546D16B4FFAA4F4ADAE /* VMCompositeTableViewDataSource.h */; };
-		DF276B9FF9B04247A27CDB07 /* NSIndexPath+VMCompositeDataSourcesAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F348887A8304017B92ADEF6 /* NSIndexPath+VMCompositeDataSourcesAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		E7B30F1AE84048B6951A8013 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9CEF4B38444AC1A578E0C5 /* SpectaTypes.h */; };
 		E7F9361FF8C6496788CA4447 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 084E8C55DDD84CBD800B1041 /* ExpectaSupport.h */; };
 		EBAB965A15D94759AA67354E /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = A513DE13A71941D5AA671046 /* EXPMatchers+beInstanceOf.h */; };
@@ -137,7 +132,8 @@
 		F953D96930AB428B8BF0DF25 /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0C5F40D4AC49CC9CC3A1E8 /* EXPDoubleTuple.h */; };
 		FBE7E1EBE6D2462B8E541171 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BC4402A5ED4419B5B2A3D3 /* EXPExpect.h */; };
 		FC9E0449EB7B4608A9AF60BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE0F51C99C42FCB30CDFD0 /* XCTest.framework */; };
-		FEE86610F68647B48C35F1EF /* NSIndexPath+VMCompositeDataSourcesAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F348887A8304017B92ADEF6 /* NSIndexPath+VMCompositeDataSourcesAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FDFD9B7719C882870081C650 /* VMCompositeIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD234C4B19C87E6500906C13 /* VMCompositeIndexPath.m */; };
+		FDFD9B7819C882880081C650 /* VMCompositeIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD234C4B19C87E6500906C13 /* VMCompositeIndexPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,10 +213,8 @@
 		333618061039410385E95D36 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = src/EXPMatcher.h; sourceTree = "<group>"; };
 		38CA7F5EF53746938E45EA77 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "src/matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
 		39450B58F4354C538FE79E7F /* libPods-Tests-Expecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Expecta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F348887A8304017B92ADEF6 /* NSIndexPath+VMCompositeDataSourcesAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSIndexPath+VMCompositeDataSourcesAdditions.m"; path = "Pod/Classes/NSIndexPath+VMCompositeDataSourcesAdditions.m"; sourceTree = "<group>"; };
 		4050070D7E1F476AA22A3056 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = src/Expecta.h; sourceTree = "<group>"; };
 		419EADD879FD48FC9B7D5FFA /* Pods-VMCompositeDataSources-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VMCompositeDataSources-acknowledgements.plist"; sourceTree = "<group>"; };
-		41F614594DD84187A1FF70F7 /* NSIndexPath+VMCompositeDataSourcesAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexPath+VMCompositeDataSourcesAdditions.h"; path = "Pod/Classes/NSIndexPath+VMCompositeDataSourcesAdditions.h"; sourceTree = "<group>"; };
 		43313C7B32314617AE80B5CD /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = src/EXPUnsupportedObject.h; sourceTree = "<group>"; };
 		4488F6FC72DA4B1DABDC95F6 /* Pods-VMCompositeDataSources.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VMCompositeDataSources.xcconfig"; sourceTree = "<group>"; };
 		4580541C725649BAABD5BC97 /* XCTestRun+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestRun+Specta.h"; path = "src/XCTestRun+Specta.h"; sourceTree = "<group>"; };
@@ -293,7 +287,6 @@
 		A5D82157F979476FBBB03955 /* VMCompositeTableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMCompositeTableViewDataSource.m; path = Pod/Classes/VMCompositeTableViewDataSource.m; sourceTree = "<group>"; };
 		A985BB953760473FB8190927 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "src/matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
 		AB213B75F5164725BDEBE3E9 /* Pods-Tests-VMCompositeDataSources.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-VMCompositeDataSources.xcconfig"; sourceTree = "<group>"; };
-		ABA0BEA130FC47E295B22F6F /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexPath+VMCompositeDataSourcesAdditions_Private.h"; path = "Pod/Classes/NSIndexPath+VMCompositeDataSourcesAdditions_Private.h"; sourceTree = "<group>"; };
 		AE5FC412213A48D88CD7021B /* XCTestRun+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestRun+Specta.m"; path = "src/XCTestRun+Specta.m"; sourceTree = "<group>"; };
 		AE8B9BCE1ACF4DD18C425362 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "src/matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
 		AF1B8E512102421E93AFCAE4 /* VMCompositeDataSources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMCompositeDataSources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +322,8 @@
 		F0E021CD1FAE4FD58C5B8A84 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = src/matchers/EXPMatchers.h; sourceTree = "<group>"; };
 		F5C2139C2AE64625BA0FD0A9 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "src/matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
 		F8722549BFC542058B59B5A9 /* Pods-VMCompositeDataSources-VMCompositeDataSources-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VMCompositeDataSources-VMCompositeDataSources-Private.xcconfig"; sourceTree = "<group>"; };
+		FD234C4A19C87E6400906C13 /* VMCompositeIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VMCompositeIndexPath.h; path = Pod/Classes/VMCompositeIndexPath.h; sourceTree = "<group>"; };
+		FD234C4B19C87E6500906C13 /* VMCompositeIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VMCompositeIndexPath.m; path = Pod/Classes/VMCompositeIndexPath.m; sourceTree = "<group>"; };
 		FDABE8AE19C0632300AABACE /* VMCompositeDataSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VMCompositeDataSources.h; path = Pod/Classes/VMCompositeDataSources.h; sourceTree = "<group>"; };
 		FE0C5F40D4AC49CC9CC3A1E8 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = src/EXPDoubleTuple.h; sourceTree = "<group>"; };
 		FFBE5BA3AF2840A589D29BA1 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "src/matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
@@ -453,9 +448,8 @@
 		5E9428CE8FFA4350AC1E7B7A /* VMCompositeDataSources */ = {
 			isa = PBXGroup;
 			children = (
-				41F614594DD84187A1FF70F7 /* NSIndexPath+VMCompositeDataSourcesAdditions.h */,
-				3F348887A8304017B92ADEF6 /* NSIndexPath+VMCompositeDataSourcesAdditions.m */,
-				ABA0BEA130FC47E295B22F6F /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h */,
+				FD234C4A19C87E6400906C13 /* VMCompositeIndexPath.h */,
+				FD234C4B19C87E6500906C13 /* VMCompositeIndexPath.m */,
 				655C8C645DF64246B18BB40B /* VMCompositeCollectionViewDataSource.h */,
 				4B45853E33AB442B8C41417D /* VMCompositeCollectionViewDataSource.m */,
 				9AE93546D16B4FFAA4F4ADAE /* VMCompositeTableViewDataSource.h */,
@@ -670,8 +664,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F6D6E456CE41BCB1A316AE /* NSIndexPath+VMCompositeDataSourcesAdditions.h in Headers */,
-				A7643E4876BE47F8A914C681 /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h in Headers */,
 				02D49A5417B54C1DB8E200E2 /* VMCompositeCollectionViewDataSource.h in Headers */,
 				DEB88EBFE87648749C84D2AE /* VMCompositeTableViewDataSource.h in Headers */,
 			);
@@ -681,8 +673,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D19D8474E524BAEAA6E36A1 /* NSIndexPath+VMCompositeDataSourcesAdditions.h in Headers */,
-				83AC1476CA1B4F5688CDF283 /* NSIndexPath+VMCompositeDataSourcesAdditions_Private.h in Headers */,
 				AC3F6213DEF246D89C2840D8 /* VMCompositeCollectionViewDataSource.h in Headers */,
 				CA6E77024DA4418CAD2E7799 /* VMCompositeTableViewDataSource.h in Headers */,
 			);
@@ -963,7 +953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF276B9FF9B04247A27CDB07 /* NSIndexPath+VMCompositeDataSourcesAdditions.m in Sources */,
+				FDFD9B7819C882880081C650 /* VMCompositeIndexPath.m in Sources */,
 				1B46392205FA45C0B5ADF896 /* Pods-VMCompositeDataSources-VMCompositeDataSources-dummy.m in Sources */,
 				50E0D643DACB4DD382DC620B /* VMCompositeCollectionViewDataSource.m in Sources */,
 				F279724551B4462EAA31CD1A /* VMCompositeTableViewDataSource.m in Sources */,
@@ -982,7 +972,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE86610F68647B48C35F1EF /* NSIndexPath+VMCompositeDataSourcesAdditions.m in Sources */,
+				FDFD9B7719C882870081C650 /* VMCompositeIndexPath.m in Sources */,
 				10B96ACAA6D34D23B7D4B540 /* Pods-Tests-VMCompositeDataSources-dummy.m in Sources */,
 				93300E33AC30476C852A01A9 /* VMCompositeCollectionViewDataSource.m in Sources */,
 				718F5020B534417788170223 /* VMCompositeTableViewDataSource.m in Sources */,

@@ -8,8 +8,7 @@
 
 #import <objc/runtime.h>
 #import "VMCompositeCollectionViewDataSource.h"
-#import "NSIndexPath+VMCompositeDataSourcesAdditions.h"
-#import "NSIndexPath+VMCompositeDataSourcesAdditions_Private.h"
+#import "VMCompositeIndexPath.h"
 
 @interface VMCompositeCollectionViewDataSource ()
 
@@ -169,9 +168,13 @@
     
     NSIndexPath *dataSourceIndexPath = [self indexPathForDataSource:dataSource compositeDataSourceIndexPath:indexPath];
     
-    dataSourceIndexPath.compositeDataSourceIndexPath = indexPath;
+    NSUInteger dataSourceIndexPathIndexes[dataSourceIndexPath.length];
+    [dataSourceIndexPath getIndexes:dataSourceIndexPathIndexes];
     
-    return [dataSource collectionView:collectionView cellForItemAtIndexPath:dataSourceIndexPath];
+    VMCompositeIndexPath *compositeIndexPath = [[VMCompositeIndexPath alloc] initWithIndexes:dataSourceIndexPathIndexes length:2];
+    compositeIndexPath.compositeDataSourceIndexPath = indexPath;
+    
+    return [dataSource collectionView:collectionView cellForItemAtIndexPath:compositeIndexPath];
 }
 
 /*
@@ -280,10 +283,10 @@
 
 #pragma mark - Method Swizzling
 
-- (id)vm_dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath*)indexPath
+- (id)vm_dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath
 {
-    if ([self.dataSource isKindOfClass:[VMCompositeCollectionViewDataSource class]]) {
-        indexPath = indexPath.compositeDataSourceIndexPath;
+    if ([self.dataSource isKindOfClass:[VMCompositeCollectionViewDataSource class]] && [indexPath isKindOfClass:[VMCompositeIndexPath class]]) {
+        indexPath = [(VMCompositeIndexPath *)indexPath compositeDataSourceIndexPath];
     }
     
     return [self vm_dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
