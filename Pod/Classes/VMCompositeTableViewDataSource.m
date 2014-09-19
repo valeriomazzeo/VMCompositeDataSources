@@ -77,9 +77,12 @@
             
             indexPath = [dataSource performSelector:@selector(indexPathForObject:) withObject:object];
             
-            *stop = !!indexPath;
-        }
-        
+            if (indexPath) {
+                indexPath = [self compositeDataSourceIndexPathForDataSource:dataSource withIndexPath:indexPath];
+                
+                *stop = !!indexPath;
+            }
+        }        
     }];
     
     return indexPath;
