@@ -171,11 +171,16 @@
     
     NSIndexPath *dataSourceIndexPath = [self indexPathForDataSource:dataSource compositeDataSourceIndexPath:indexPath];
     
-    NSUInteger dataSourceIndexPathIndexes[dataSourceIndexPath.length];
-    [dataSourceIndexPath getIndexes:dataSourceIndexPathIndexes];
+    VMCompositeIndexPath *compositeIndexPath = nil;
     
-    VMCompositeIndexPath *compositeIndexPath = [[VMCompositeIndexPath alloc] initWithIndexes:dataSourceIndexPathIndexes length:2];
-    compositeIndexPath.compositeDataSourceIndexPath = indexPath;
+    if (dataSourceIndexPath.length) {
+        
+        NSUInteger dataSourceIndexPathIndexes[dataSourceIndexPath.length];
+        [dataSourceIndexPath getIndexes:dataSourceIndexPathIndexes];
+        
+        compositeIndexPath = [[VMCompositeIndexPath alloc] initWithIndexes:dataSourceIndexPathIndexes length:2];
+        compositeIndexPath.compositeDataSourceIndexPath = indexPath;
+    }
     
     return [dataSource tableView:tableView cellForRowAtIndexPath:compositeIndexPath];
 }
