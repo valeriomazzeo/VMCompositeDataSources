@@ -1,3 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'VMCompositeDataSources', :exclusive => true do
   pod "VMCompositeDataSources", :path => "../"
 end
